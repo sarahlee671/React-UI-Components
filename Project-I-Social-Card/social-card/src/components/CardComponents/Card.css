@@ -1,1 +1,28 @@
 /* All styles for your Card Components live here */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-left: 60px;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.react {
+    color: darkgray;
+}

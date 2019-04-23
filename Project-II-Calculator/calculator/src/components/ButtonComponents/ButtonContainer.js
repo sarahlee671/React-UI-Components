@@ -4,7 +4,7 @@ import './Button.css';
 const ButtonContainer = props => {
     return (
         <div className={`buttonContainer ${props.className}`}>
-            {propls.button}
+            {props.button}
         </div>
     );
 };

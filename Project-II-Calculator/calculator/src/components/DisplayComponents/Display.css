@@ -1,6 +1,8 @@
 .total {
     color: white;
-    blackground: black;
+    background: black;
     line-height: 100px;
     font-size: 50px;
+    height: 80px;
+
 }

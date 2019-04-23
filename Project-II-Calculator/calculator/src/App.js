@@ -1,7 +1,14 @@
 import React from 'react';
 import './App.css';
+import NumberButton from './components/ButtonComponents/NumberButton';
+import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay';
+
 
 const App = () => {
+  const numberButtons = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(number => {
+    return <NumberButton number={number}></NumberButton>
+  }) 
+  
   return (
     <div>
       <h3>Welcome to React Calculator</h3>
@@ -16,7 +23,9 @@ const App = () => {
           inside of this file in order to make them work.
         </strong>
       </p>
+      {numberButtons}
     </div>
+ 
   );
 };
 

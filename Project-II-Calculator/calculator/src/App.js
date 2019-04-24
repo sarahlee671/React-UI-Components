@@ -6,42 +6,50 @@ import ActionButton from './components/ButtonComponents/ActionButton';
 import ButtonContainer from './components/ButtonComponents/ButtonContainer';
 
 
-class App extends React.Component {
-  render() {
-    const numberButtons = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(number => {
-      return <NumberButton number={number}></NumberButton>
-    })
-
+const App = () => {
+  
 
   
     return (
       <div className="wrapper">
+
         <CalculatorDisplay />
-        <ButtonContainer className="clear-button">
-          <ActionButton />
-          <NumberButton />
-        </ButtonContainer>
+        <buttonContainer>
+          <ActionButton className="bigButton" text="clear" />
+          <NumberButton buttonStyle="red-button" text="÷" />
+        </buttonContainer>
+        <buttonContainer>
+          <NumberButton buttonStyle="number-button" text="7" />
+          <NumberButton buttonStyle="number-button" text="8" />
+          <NumberButton buttonStyle="number-button" text="9" />
+          <NumberButton buttonStyle="red-button" text="x" />
+        </buttonContainer>
+        <buttonContainer>
+          <NumberButton buttonStyle="number-button" text="4" />
+          <NumberButton buttonStyle="number-button" text="5" />
+          <NumberButton buttonStyle="number-button" text="6" />
+          <NumberButton buttonStyle="red-button" text="-" />
+
+        </buttonContainer>
+        <buttonContainer>
+          <NumberButton buttonStyle="number-button" text="1" />
+          <NumberButton buttonStyle="number-button" text="2" />
+          <NumberButton buttonStyle="number-button" text="3" />
+          <NumberButton buttonStyle="red-button" text="+" />
+        </buttonContainer>
+        <buttonContainer>
+          <ActionButton className="bigButton" text="0" />
+          <NumberButton buttonStyle="red-button" text="=" />
+        </buttonContainer>
+      </div>
+  );
+  
+}
+
+export default App;
+
 
 
       
 
-        <h3>Welcome to React Calculator</h3>
-        <p>
-          We have given you a starter project. You'll want to build out your
-          components in their respective files, remove this code and replace it
-          with the proper components.
-      </p>
-        <p>
-          <strong>
-            Don't forget to `default export` your components and import them here
-            inside of this file in order to make them work.
-        </strong>
-        </p>
-        {numberButtons}
-      </div>
-
-    );
-  };
-}
-
-export default App;
+ 

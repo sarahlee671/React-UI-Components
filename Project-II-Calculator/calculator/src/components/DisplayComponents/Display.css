@@ -1,0 +1,10 @@
+.total {
+    color: white;
+    background: black;
+    line-height: 100px;
+    font-size: 80px;
+    height: 100px;
+    text-align: end;
+    padding-right: 10px;
+
+}
